@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>人工智能开放创新平台</title>
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+    <link href="{% static 'css/login1.css' %}" rel="stylesheet">
+
+    <style type="text/css">
+        .login-container {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            background-color: #141a48;
+            background-image: url({% static 'img/login-bg.png' %});
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .login-container .page-dialog {
+            text-align: left;
+        }
+
+        .login-container .set-language {
+            float: right;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        .login-container .top-links {
+            margin-bottom: 5px;
+        }
+
+        .login-container .top-links .left-link {
+            float: left;
+        }
+
+        .login-container .top-links .right-link {
+            float: right;
+        }
+
+        .login-container .top-links a {
+            color: #409EFF;
+        }
+
+        .login-container .top-alert {
+            margin-bottom: 10px;
+        }
+
+        #loginThree {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+
+        .login-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -230px 0 0 -210px;
+            width: 440px;
+            padding: 25px;
+            -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.08);
+            background-color: #fff;
+            border-radius: 4px;
+            z-index: 3;
+        }
+
+        .login-form .login-logo {
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .login-form .login-logo img {
+            width: 110px;
+            max-height: 46px;
+            margin-right: 8px;
+        }
+
+        .login-form .login-logo span {
+            vertical-align: text-bottom;
+            font-size: 16px;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        .login-form .login-account {
+            color: #999;
+            text-align: center;
+            margin-top: -5px;
+            font-size: 14px;
+        }
+
+        .login-form .login-account a {
+            color: #409EFF;
+        }
+
+        .login-form .login-account span {
+            font-size: 12px;
+        }
+
+        .login-form .login-account span:first-child {
+            margin-right: 16px;
+        }
+
+        .form-fade-enter-active, .form-fade-leave-active {
+            -webkit-transition: all 1s;
+            transition: all 1s;
+        }
+
+        .form-fade-enter, .form-fade-leave-active {
+            -webkit-transform: translate3d(0, -50px, 0);
+            transform: translate3d(0, -50px, 0);
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     style="position: absolute; width: 0; height: 0" id="__SVG_SPRITE_NODE__">
+    <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"
+            viewBox="0 0 1024 1024" id="icon-eye">
+        <defs>
+            <style type="text/css"></style>
+        </defs>
+        <path d="M941.677063 391.710356c9.337669-14.005992 6.224772-32.68133-6.224772-43.575447-14.005992-10.894118-32.68133-7.78122-43.575447 6.224771-1.556449 1.556449-174.300768 205.426673-379.727441 205.426673-199.200878 0-379.727441-205.426673-381.28389-206.982098-10.894118-12.450567-31.124881-14.005992-43.575448-3.112898-12.450567 10.894118-14.005992 31.124881-3.112897 43.575448 3.112897 4.668323 40.46255 46.687322 99.600439 93.375667l-79.369676 82.48155c-12.450567 12.450567-10.894118 32.68133 1.556449 43.575448 3.112897 6.224772 10.894118 9.337669 18.675338 9.337669 7.78122 0 15.562441-3.112897 21.787213-9.337669l85.594447-88.706321c40.46255 28.013007 88.706321 54.469566 141.619438 73.14388L340.959485 707.631586c-4.668323 17.118889 4.669346 34.237779 21.787213 38.906101h9.337669c14.005992 0 26.456558-9.337669 29.568432-23.343661l32.68133-110.494556c24.90011 4.668323 51.356668 7.78122 77.813227 7.78122s52.913117-3.112897 77.813227-7.78122l32.68133 108.938108c3.112897 14.005992 17.118889 23.343661 29.569456 23.343661 3.112897 0 6.224772 0 7.78122-1.556449 17.118889-4.669346 26.456558-21.787212 21.788236-38.906102l-32.68133-108.938108c52.913117-18.675338 101.156888-45.131897 141.619438-73.14388l84.037998 87.150896c6.224772 6.224772 14.005992 9.337669 21.787212 9.337669 7.78122 0 15.562441-3.112897 21.787212-9.337669 12.450567-12.450567 12.450567-31.124881 1.556449-43.575448l-79.369675-82.48155c63.808258-46.688345 101.158934-91.820242 101.158934-91.820242z"
+              p-id="7879"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"
+            viewBox="0 0 1024 1024" id="icon-form">
+        <defs>
+            <style type="text/css"></style>
+        </defs>
+        <path d="M942.827259 80.3367c-11.42419-11.406794-26.41051-17.117866-41.377386-17.117866-14.985296 0-29.952172 5.711072-41.358967 17.117866L719.392444 221.014696l-19.441794 19.441794L681.577187 258.832 569.516971 370.909611 375.99749 564.411697l0 0.019443 0 84.372619 81.145112 0 0.010233 0 95.418186-95.435583 213.398228-213.400275 3.14155-3.14155-0.019443 0 9.979282-9.977235 0 0L942.827259 163.073052C965.697129 140.259464 965.697129 103.186104 942.827259 80.3367z"
+              p-id="3231"></path>
+        <path d="M793.542234 367.521444 580.14196 580.939115 484.72582 676.376745 473.299583 687.800935 457.152834 687.800935 375.99749 687.800935 337.000314 687.800935 337.000314 648.803759 337.000314 564.411697 337.000314 548.264948 348.424504 536.838711 541.943986 343.338672 654.004201 231.259014 665.428392 219.834824 64.020082 219.834824 64.020082 960.781166 804.966425 960.781166 804.966425 356.116697 796.607036 364.475062Z"
+              p-id="3232"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"
+            viewBox="0 0 1024 1024" id="icon-international">
+        <defs>
+            <style type="text/css"></style>
+        </defs>
+        <path d="M666.298182 824.087273c-12.567273-30.72-54.225455-83.316364-123.578182-156.392728-18.618182-19.549091-17.454545-34.443636-10.705455-78.894545v-5.12c4.421818-30.487273 12.101818-48.407273 114.501819-64.698182 52.130909-8.145455 65.629091 12.567273 84.712727 41.425455l6.283636 9.541818a101.003636 101.003636 0 0 0 51.432728 41.658182c9.076364 4.189091 20.247273 9.309091 35.374545 17.92C861.090909 649.774545 861.090909 672.814545 861.090909 723.549091v5.818182a215.272727 215.272727 0 0 1-41.425454 139.636363 472.436364 472.436364 0 0 1-152.203637 88.203637c27.927273-52.363636 6.516364-114.501818 0-132.421818zM512 40.96a468.014545 468.014545 0 0 1 203.869091 46.545455 434.501818 434.501818 0 0 0-102.865455 82.618181c-7.447273 10.24-13.730909 19.781818-19.781818 28.625455-19.549091 29.556364-29.090909 42.821818-46.545454 44.916364a200.843636 200.843636 0 0 1-33.745455 0c-34.210909-2.327273-80.756364-5.12-95.650909 35.374545-9.541818 25.832727-11.170909 95.650909 19.549091 131.956364a32.349091 32.349091 0 0 1 2.56 28.625454 56.087273 56.087273 0 0 1-16.523636 25.832727 151.505455 151.505455 0 0 1-23.272728-23.272727 151.272727 151.272727 0 0 0-66.56-52.829091c-10.007273-2.792727-21.178182-5.12-31.883636-7.447272-30.254545-6.283636-64.232727-13.498182-72.145455-30.487273a119.156364 119.156364 0 0 1-5.818181-46.545455 175.476364 175.476364 0 0 0-11.17091-74.007272 70.981818 70.981818 0 0 0-44.450909-39.563637A469.643636 469.643636 0 0 1 512 40.96zM0 512A512 512 0 1 0 512 0 512 512 0 0 0 0 512z"
+              p-id="1420"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"
+            viewBox="0 0 1024 1024" id="icon-password">
+        <defs>
+            <style type="text/css"></style>
+        </defs>
+        <path d="M780.8 354.579692 665.6 354.579692 665.6 311.689846c0-72.310154-19.849846-193.299692-153.6-193.299692-138.870154 0-153.6 135.049846-153.6 193.299692l0 42.889846L243.2 354.579692 243.2 311.689846C243.2 122.249846 348.790154 0 512 0s268.8 122.249846 268.8 311.689846L780.8 354.579692zM588.8 669.420308C588.8 625.900308 554.220308 590.769231 512 590.769231s-76.8 35.131077-76.8 78.651077c0 29.459692 15.399385 54.468923 38.439385 67.820308l0 89.639385c0 21.740308 17.250462 39.699692 38.4 39.699692s38.4-17.959385 38.4-39.699692l0-89.639385C573.44 723.889231 588.8 698.88 588.8 669.420308zM896 512l0 393.609846c0 65.260308-51.869538 118.390154-115.2 118.390154L243.2 1024c-63.291077 0-115.2-53.129846-115.2-118.390154L128 512c0-65.220923 51.869538-118.390154 115.2-118.390154l537.6 0C844.130462 393.609846 896 446.779077 896 512z"
+              p-id="9230"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"
+            viewBox="0 0 1024 1024" id="icon-table">
+        <defs>
+            <style type="text/css"></style>
+        </defs>
+        <path d="M568.6 0h454.9v454.9H568.6V0z m0 568.6h454.9v454.9H568.6V568.6zM0 568.6h454.9v454.9H0V568.6zM0 0h454.9v454.9H0V0z"
+              fill="" p-id="5071"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"
+            viewBox="0 0 1024 1024" id="icon-tree">
+        <defs>
+            <style type="text/css"></style>
+        </defs>
+        <path d="M1013.703 693.345c6.865 6.865 10.297 14.874 10.297 24.027l0 205.944c0 9.916-3.432 18.115-10.297 24.599-6.865 6.483-15.255 9.725-25.171 9.725L782.588 957.64c-9.153 0-17.162-3.242-24.027-9.725-6.865-6.483-10.297-14.683-10.297-24.599L748.264 717.372c0-6.102 1.526-11.823 4.577-17.162s7.246-9.534 12.586-12.586 11.06-4.577 17.162-4.577l77.801 0L860.39 546.896c0-4.577-1.144-8.772-3.432-12.586s-5.339-6.865-9.153-9.153-8.009-3.432-12.585-3.432L543.464 521.725l0 161.323 77.801 0c9.153 0 17.162 3.432 24.027 10.297s10.297 14.874 10.297 24.027l0 205.944c0 6.102-1.526 11.823-4.577 17.162s-7.246 9.534-12.585 12.585-11.06 4.577-17.162 4.577L415.321 957.64c-6.102 0-11.823-1.526-17.162-4.577s-9.725-7.246-13.158-12.585-5.149-11.06-5.149-17.162L379.852 717.372c0-9.153 3.432-17.162 10.297-24.027s15.255-10.297 25.171-10.297l76.657 0L491.977 521.725 188.782 521.725c-7.628 0-13.92 2.479-18.878 7.437-4.958 4.958-7.437 10.869-7.437 17.734l0 136.152 77.801 0c9.916 0 18.115 3.432 24.599 10.297s9.725 14.874 9.725 24.027l0 205.944c0 9.916-3.242 18.115-9.725 24.599-6.483 6.483-14.683 9.725-24.599 9.725L34.324 957.64c-3.814 0-7.437-0.572-10.869-1.716-3.432-1.144-6.483-2.67-9.153-4.577-2.67-1.907-5.149-4.386-7.437-7.437-2.288-3.051-4.004-6.293-5.149-9.725C0.572 930.753 0 927.13 0 923.316L0 717.372c0-3.051 0.381-6.102 1.144-9.153s1.907-5.721 3.432-8.009 3.432-4.577 5.721-6.865 4.577-4.195 6.865-5.721 4.958-2.67 8.009-3.432 6.102-1.144 9.153-1.144l77.801 0L112.125 495.41c0-6.865 2.479-12.776 7.437-17.734s10.869-7.437 17.734-7.437l354.682 0L491.978 342.096l-76.657 0c-9.916 0-18.306-3.432-25.171-10.297s-10.297-14.874-10.297-24.027L379.853 101.828c0-9.916 3.432-18.306 10.297-25.171s15.255-10.297 25.171-10.297l205.944 0c6.102 0 11.823 1.716 17.162 5.149 5.339 3.432 9.534 7.818 12.585 13.158 3.051 5.339 4.577 11.06 4.577 17.162l0 205.944c0 9.153-3.432 17.162-10.297 24.027s-14.874 10.297-24.027 10.297l-77.801 0 0 128.143L885.56 470.24c7.628 0 13.92 2.479 18.878 7.437s7.437 10.869 7.437 17.734l0 187.638 76.657 0C998.448 683.048 1006.838 686.48 1013.703 693.345z"
+              p-id="3508"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon"
+            viewBox="0 0 1024 1024" id="icon-user">
+        <defs>
+            <style type="text/css"></style>
+        </defs>
+        <path d="M504.951 511.98c93.49 0 169.28-74.002 169.28-165.26 0-91.276-75.79-165.248-169.28-165.248-93.486 0-169.287 73.972-169.279 165.248-0.001 91.258 75.793 165.26 169.28 165.26z m77.6 55.098H441.466c-120.767 0-218.678 95.564-218.678 213.45V794.3c0 48.183 97.911 48.229 218.678 48.229H582.55c120.754 0 218.66-1.78 218.66-48.229v-13.77c0-117.887-97.898-213.45-218.66-213.45z"
+              p-id="7987"></path>
+    </symbol>
+</svg>
+<div id="app">
+    <div class="login-container">
+        <div class="login-form">
+            <div data-v-3c863084="" class="international set-language el-dropdown">
+                <div data-v-3c863084="" aria-haspopup="list" aria-controls="dropdown-menu-6131" role="button"
+                     tabindex="0" class=" el-dropdown-selfdefine">
+                    <svg data-v-20996423="" data-v-3c863084="" aria-hidden="true" class="svg-icon international-icon">
+                        <use data-v-20996423="" ></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="login-logo"><img src="{% static 'img/logo_open_ai.jpg' %}"></div>
+            <form class="el-form" action="{% url 'user:register' %}" method="post" autocomplete="off">
+                <div class="el-form-item top-links el-form-item--medium"><!---->
+                    <div class="el-form-item__content">
+                        <button type="button" class="el-button left-link el-button--text el-button--medium"><!---->
+                            <!----><span>入驻平台流程</span></button>
+                        <button type="button" class="el-button right-link el-button--text el-button--medium"><!---->
+                            <!----><span>下载训练数据流程</span></button><!----></div>
+                </div>
+                <div data-v-33777706="" role="alert" class="el-alert top-alert el-alert--error" style="display: {{ Msg }}"><i
+                        class="el-alert__icon el-icon-error"></i>
+                    <div class="el-alert__content"><span class="el-alert__title">该邮箱已经存在!!!!</span><!----><i
+                            class="el-alert__closebtn el-icon-close"></i></div>
+                </div>
+                <div class="el-form-item is-required el-form-item--medium"><!---->
+                    <div class="el-form-item__content">
+                        <div class="el-input el-input--medium"><!---->
+                            <input autocomplete="off" placeholder="请输入用户名"
+                                   type="text" rows="2" validateevent="true"
+                                   class="el-input__inner" name="username"><!----><!---->
+                            <!----></div><!----></div>
+                </div>
+                <div class="el-form-item is-required el-form-item--medium"><!---->
+                    <div class="el-form-item__content">
+                        <div class="el-input el-input--medium"><!---->
+                            <input autocomplete="off" placeholder="请输入密码"
+                                   type="password" rows="2"
+                                   validateevent="true"
+                                   class="el-input__inner" name="password"><!----><!---->
+                            <!----></div><!----></div>
+                </div>
+                <div class="el-form-item is-required el-form-item--medium"><!---->
+                    <div class="el-form-item__content">
+                        <div class="el-input el-input--medium"><!---->
+                            <input autocomplete="off" placeholder="请输入电子邮箱"
+                                   type="email" rows="2" validateevent="true"
+                                   class="el-input__inner" name="email"><!----><!---->
+                            <!----></div><!----></div>
+                </div>
+                <div class="el-form-item el-form-item--medium"><!---->
+                    <div class="el-form-item__content">
+                        <button type="submit" class="el-button el-button--primary el-button--medium"><!---->
+                            <!----><span>注册</span></button><!----></div>
+                </div>
+                {% csrf_token %}
+            </form>
+            <div class="login-account">
+                已有账号？
+                <a href="{% url 'user:login' %}" class="">去登录</a></div>
+        </div>
+        <div id="loginThree">
+            <div style="position: relative; top: 200px;">
+                <canvas width="1280" height="648"></canvas>
+            </div>
+        </div>
+        <div class="el-dialog__wrapper" style="display: none;">
+            <div class="el-dialog" style="margin-top: 15vh;">
+                <div class="el-dialog__header"><span class="el-dialog__title"></span>
+                    <button type="button" aria-label="Close" class="el-dialog__headerbtn"><i
+                            class="el-dialog__close el-icon el-icon-close"></i></button>
+                </div><!---->
+                <div class="el-dialog__footer"><span class="dialog-footer"><button type="button"
+                                                                                   class="el-button el-button--primary el-button--medium"><!---->
+                    <!----><span>知道了</span></button></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div style="display: none; position: fixed; top: 30px; width: auto; max-width: 100%; text-align: center; left: 50%; transform: translateX(-50%); z-index: 99999999;">
+        <div style="display: inline-block; font-size: 14px; font-weight: bold; border: 1px solid rgb(240, 195, 109); background-color: rgb(249, 237, 190); padding: 0px 10px; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;"></div>
+    </div>
+</div>
+<ul data-v-3c863084="" class="el-dropdown-menu el-popper el-dropdown-menu--medium" id="dropdown-menu-6131"
+    style="transform-origin: center top; z-index: 2001; display: none;">
+    <li data-v-3c863084="" aria-disabled="true" class="el-dropdown-menu__item is-disabled">中文</li>
+    <li data-v-3c863084="" tabindex="-1" class="el-dropdown-menu__item">English</li>
+    <div x-arrow="" class="popper__arrow" style="left: 59px;"></div>
+</ul>
+<script type="text/javascript" src="{% static 'js/back_move.js' %}"></script>
+</body>
+</html>

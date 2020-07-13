@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+    <title>人工智能开放创新平台</title>
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+    <link href="{% static '/css/login1.css' %}" rel="stylesheet">
+
+    <script type="text/javascript" href="{% static 'js/index.js' %}"></script>
+    <style type="text/css">
+        .login-container[data-v-33777706] {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            background-color: #141a48;
+            background-image: url({% static '/img/login-bg.png' %});
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .login-container .page-dialog[data-v-33777706] {
+            text-align: left;
+        }
+
+        .login-container .set-language[data-v-33777706] {
+            float: right;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        .login-container .top-links[data-v-33777706] {
+            margin-bottom: 5px;
+        }
+
+        .login-container .top-links .left-link[data-v-33777706] {
+            float: left;
+        }
+
+        .login-container .top-links .right-link[data-v-33777706] {
+            float: right;
+        }
+
+        .login-container .top-links a[data-v-33777706] {
+            color: #409EFF;
+        }
+
+        .login-container .top-alert[data-v-33777706] {
+            margin-bottom: 10px;
+        }
+
+        #loginThree[data-v-33777706] {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+
+        .login-form[data-v-33777706] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -230px 0 0 -210px;
+            width: 440px;
+            padding: 25px;
+            -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.08);
+            background-color: #fff;
+            border-radius: 4px;
+            z-index: 3;
+        }
+
+        .login-form .login-logo[data-v-33777706] {
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .login-form .login-logo img[data-v-33777706] {
+            width: 110px;
+            max-height: 46px;
+            margin-right: 8px;
+        }
+
+        .login-form .login-logo span[data-v-33777706] {
+            vertical-align: text-bottom;
+            font-size: 16px;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        .login-form .login-account[data-v-33777706] {
+            color: #999;
+            text-align: center;
+            margin-top: -5px;
+            font-size: 14px;
+        }
+
+        .login-form .login-account a[data-v-33777706] {
+            color: #409EFF;
+        }
+
+        .login-form .login-account span[data-v-33777706] {
+            font-size: 12px;
+        }
+
+        .login-form .login-account span[data-v-33777706]:first-child {
+            margin-right: 16px;
+        }
+
+        .form-fade-enter-active[data-v-33777706], .form-fade-leave-active[data-v-33777706] {
+            -webkit-transition: all 1s;
+            transition: all 1s;
+        }
+
+        .form-fade-enter[data-v-33777706], .form-fade-leave-active[data-v-33777706] {
+            -webkit-transform: translate3d(0, -50px, 0);
+            transform: translate3d(0, -50px, 0);
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div data-v-33777706="" class="login-container">
+        <div data-v-33777706="" class="login-form" style="">
+            <div data-v-3c863084="" data-v-33777706="" class="international set-language el-dropdown">
+                <div data-v-3c863084="" aria-haspopup="list" aria-controls="dropdown-menu-4252" role="button"
+                     tabindex="0" class=" el-dropdown-selfdefine">
+                    <svg data-v-20996423="" data-v-3c863084="" aria-hidden="true" class="svg-icon international-icon">
+                        <use data-v-20996423="" ></use>
+                    </svg>
+                </div>
+                <ul data-v-3c863084="" class="el-dropdown-menu el-popper el-dropdown-menu--medium"
+                    id="dropdown-menu-4252" style="display: none;">
+                    <li data-v-3c863084="" aria-disabled="true" class="el-dropdown-menu__item is-disabled">中文</li>
+                    <li data-v-3c863084="" tabindex="-1" class="el-dropdown-menu__item">English</li>
+                </ul>
+            </div>
+            <div data-v-33777706="" class="login-logo"><img data-v-33777706="" src="/static/img/logo_open_ai.jpg"></div>
+            <form data-v-33777706="" class="el-form" action="{% url 'user:login' %}" method="post" autocomplete="off">
+                <div data-v-33777706="" class="el-form-item top-links el-form-item--medium"><!---->
+                    <div class="el-form-item__content">
+                        <button data-v-33777706="" type="button"
+                                class="el-button left-link el-button--text el-button--medium"><!---->
+                            <!----><span>入驻平台流程</span></button>
+                        <button data-v-33777706="" type="button"
+                                class="el-button right-link el-button--text el-button--medium"><!----><!----><span>下载训练数据流程</span>
+                        </button><!----></div>
+                </div> <!---->
+                <div data-v-33777706="" role="alert" class="el-alert top-alert el-alert--error" style="display: {{ Msg }}"><i
+                        class="el-alert__icon el-icon-error"></i>
+                    <div class="el-alert__content"><span class="el-alert__title">账号或密码错误, 你还可以再尝试 4 次</span><!----><i
+                            class="el-alert__closebtn el-icon-close"></i></div>
+                </div>
+                <div data-v-33777706="" class="el-form-item is-required el-form-item--medium"><!---->
+                    <div class="el-form-item__content">
+                        <div data-v-33777706="" class="el-input el-input--medium"><!---->
+                            <input autocomplete="off" placeholder="请输入用户名或邮箱" type="text" rows="2" validateevent="true"
+                                   class="el-input__inner" name="username">
+                            <!----><!----><!----></div><!----></div>
+                </div>
+                <div data-v-33777706="" class="el-form-item is-required el-form-item--medium"><!---->
+                    <div class="el-form-item__content">
+                        <div data-v-33777706="" class="el-input el-input--medium"><!---->
+                            <input autocomplete="off"
+                                   placeholder="请输入密码"
+                                   type="password" rows="2"
+                                   validateevent="true"
+                                   class="el-input__inner" name="password">
+                            <!----><!----><!----></div><!----></div>
+                </div>
+                <div data-v-33777706="" class="el-form-item el-form-item--medium"><!---->
+                    <div class="el-form-item__content">
+                        <button data-v-33777706="" type="submit" class="el-button el-button--primary el-button--medium">
+                            <!----><!----><span>登录</span></button><!----></div>
+                </div>
+                {% csrf_token %}
+            </form>
+            <div data-v-33777706="" class="login-account">
+                还没有账号？
+                <a data-v-33777706="" href="{% url 'user:register' %}" class="">去注册</a></div>
+        </div>
+        <div data-v-33777706="" id="loginThree">
+            <div style="position: relative; top: 200px;">
+                <canvas width="1280" height="648"></canvas>
+            </div>
+        </div>
+        <div data-v-33777706="" class="el-dialog__wrapper" style="display: none;">
+            <div class="el-dialog" style="margin-top: 15vh;">
+                <div class="el-dialog__header"><span class="el-dialog__title"></span>
+                    <button type="button" aria-label="Close" class="el-dialog__headerbtn"><i
+                            class="el-dialog__close el-icon el-icon-close"></i></button>
+                </div><!---->
+                <div class="el-dialog__footer"><span data-v-33777706="" class="dialog-footer"><button data-v-33777706=""
+                                                                                                      type="button"
+                                                                                                      class="el-button el-button--primary el-button--medium"><!---->
+                    <!----><span>知道了</span></button></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div style="display: none; position: fixed; top: 30px; width: auto; max-width: 100%; text-align: center; left: 50%; transform: translateX(-50%); z-index: 99999999;">
+        <div style="display: inline-block; font-size: 14px; font-weight: bold; border: 1px solid rgb(240, 195, 109); background-color: rgb(249, 237, 190); padding: 0px 10px; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;"></div>
+    </div>
+</div>
+<script type="text/javascript" src="{% static "/js/back_move.js" %}"></script>
+</body>
+</html>

@@ -1,0 +1,551 @@
+@media only screen and (max-width: 767px) {
+    .video-wrap{
+        width: 100%;
+        position: fixed;
+        height: 100%;
+        background:rgba(00, 00, 00, .6);
+        z-index: 999;
+    }
+    .video{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin:auto;
+        padding-top: 50px;
+    }
+    .topcontrol {
+        z-index: 1000;
+    }
+
+    .index-link-mini {
+        display: inline-block !important;
+    }
+
+    /*.index-link {*/
+    /*display: none !important;*/
+    /*}*/
+    .navbar-brand .logo {
+        width: inherit !important;
+        height: 44px !important;
+        margin-top: 0 !important;
+    }
+
+    .navbar-nav {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .navbar-nav .spliter {
+        display: none;
+    }
+
+    .navbar-nav .login-link {
+
+    }
+
+    .navbar-nav .reg-link {
+        padding-left: 15px !important;
+    }
+
+    .slider-info {
+        top: 30%;
+    }
+
+    .slider-info .header {
+        font-size: 28px;
+    }
+
+    #home-slider .flex-control-nav {
+        display: none;
+    }
+
+    .single_service {
+        height: inherit !important;
+        min-height: 160px;
+    }
+
+    .partner {
+        margin-left: 0 !important;
+    }
+
+    .footerinfo {
+        display: block;
+    }
+
+    .footerinfo > .logo {
+        display: none;
+    }
+
+    .footerinfo > .address-info {
+        padding: 0;
+        margin: 0;
+        height: inherit !important;
+        border: 0 !important;
+    }
+
+    .footerinfo > .qrcode {
+        display: block;
+        margin: 0 auto !important;
+    }
+
+    .service_img, .mission_img {
+        display: none;
+    }
+
+    /* ai2018 */
+    .introduction {
+        height: auto;
+    }
+
+    .introduction-img {
+        text-align: center;
+    }
+
+    .introduction-img img {
+        float: none;
+    }
+
+    .title-competition {
+        margin-top: 70px;
+    }
+
+    .target-title {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .target-content {
+    }
+
+    .target {
+        min-height: 627px;
+        height: inherit !important;
+        padding-bottom: 20px;
+    }
+
+    .target-content-left {
+        padding-left: 15px;
+    }
+
+    .mechanism-title {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .demand {
+        height: inherit !important;
+        padding-bottom: 20px;
+    }
+
+    .demand-title {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .demand-content {
+        margin-left: 15px;
+    }
+
+    .download-link {
+        font-size: 14px;
+    }
+
+    .format {
+        height: auto !important;
+    }
+
+    .format-title {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .collect, .prelim, .inals, .display {
+        margin: 0 auto;
+    }
+
+    .format-content-right {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .format-content-right .content-left {
+        display: none;
+    }
+
+    .format-content-right .content-right {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+        height: inherit !important;
+    }
+
+    /* .referral.html */
+    .ref-img {
+        min-height: inherit !important;
+    }
+
+    .appresource {
+        margin-bottom: inherit !important;
+        padding-left: inherit !important;
+    }
+
+    .appresource-top {
+        /*margin-top: 110% !important;*/
+        float: none !important;
+        margin-left: 0 !important;
+    }
+
+    @media screen and (max-width: 500px) {
+        .appresource-top {
+            margin-top: 75% !important;
+        }
+    }
+    .appresource-bottom {
+        margin-top: 0 !important;
+        float: none !important;
+    }
+
+    #format-content-right .carousel-inner .item .reinfo, #display-conten .item .reinfo, #prelim-conten .item .reinfo {
+        padding: 15px 0 0 0px;
+    }
+
+    #format-content-right .carousel-inner .item div:first-child, #display-conten .item div:first-child, #prelim-conten .item div:first-child {
+        padding: 40px 0;
+    }
+
+    .img-thumbnail {
+        margin-top: 70px;
+    }
+
+    .our_misssion {
+        padding-top: 0px;
+    }
+
+    .wrap {
+        margin: 50px 0;
+        height: auto;
+    }
+
+    .tab-box {
+        width: 100%;
+    }
+
+    .tab-box li {
+        width: 100%
+    }
+
+    .tab-box li label {
+        width: 100%
+    }
+
+    .tab-box li div {
+        top: 150px;
+        width: 100%;
+        left: 0;
+        padding-top: 0;
+        position: inherit;
+    }
+
+    .tab-box li div a {
+        width: 100%;
+        margin: inherit !important;
+    }
+
+    .physical-resources {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tab-box li div.ai-framework {
+        width: 100%;
+        height: auto;
+    }
+
+    .format-content-right {
+        margin-left: 0 !important;
+    }
+
+    #format-content-right .carousel-inner > .item, #display-conten .item, #prelim-conten .item {
+        height: 600px;
+    }
+
+    /* ecosys */
+    .platform-up {
+        margin-top: 70px;
+    }
+
+    .platform-down-content-left {
+        text-align: center;
+    }
+
+    .platform-down-right {
+        height: inherit !important;
+    }
+
+    .invents {
+        padding-top: 750px !important;
+    }
+
+    /* contact */
+    #contact .container {
+        padding: 0;
+    }
+
+    .contactcontent {
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #infosent {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        padding: 0 10px !important;
+    }
+
+    #infosent input, textarea {
+        width: 100% !important;
+        border: 1px solid #ddd;
+    }
+
+    .contactmeth {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 10px !important;
+        margin-top: 20px !important;
+    }
+
+    .footerinfo div {
+        height: auto;
+    }
+
+    .news-wrap {
+        height: auto !important;
+    }
+
+    .import {
+        text-align: center;
+    }
+
+    .import a {
+        position: relative !important;
+        bottom: -430px !important;
+        left: 0 !important;
+        margin-left: 0 !important;
+        padding: 6px 20px !important;
+    }
+
+    .dyniclist .item .listimg {
+        float: none;
+    }
+
+    .mechanism-body {
+        height: auto !important;
+    }
+
+    .competition-content-ul li {
+        font-size: 15px !important;
+        display: inline-block !important;
+        line-height: 135% !important;
+    }
+
+    .import {
+        width: 100%;
+        background: url(../img/import.png) no-repeat center;
+    }
+
+    .newslist {
+        width: 100%;
+    }
+
+    .dyniclist .item {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    .dyniclist {
+        width: 100% !important;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .ainewsdetail {
+        width: 100%;
+    }
+
+    .titsty-mini {
+        font-weight: bold;
+        color: #333;
+        display: inline-block;
+    }
+
+    .titsty {
+        /*display: none;*/
+    }
+
+    .selectcon .item {
+        width: inherit;
+    }
+
+    .dyniclists {
+        background: #f5f5f5;
+        /*line-height: 24 !important;*/
+        padding: 0 !important;
+    }
+
+    .dyniclists img {
+        width: 100% !important;
+        min-height: 200px !important;
+    }
+
+    .dyniclists .ainewscontent {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .dyniclists .ainewscontents {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
+    }
+
+    .dyniclists .ainewscontent h4 {
+        line-height: 2 !important;
+        margin-top: 6% !important;
+        margin-bottom: 2% !important;
+    }
+
+    .min-titlt {
+        padding-top: 40!important;
+    }
+
+    /* AI 大赛页面 */
+    .division {
+        overflow-x: auto;
+        height: 650px !important;
+    }
+
+    .division-title {
+        font-size: 24px;
+    }
+
+    .division-content-left-title {
+        font-size: 18px;
+    }
+
+    .division-content-left ul li {
+        line-height: 20px;
+        font-size: 12px;
+        padding-bottom: 7%;
+    }
+
+    .division-content-left img {
+        width: 31%;
+    }
+
+    .division-content-right-title {
+        font-size: 18px;
+    }
+
+    .division-content-right ul li {
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    .division-content-right img {
+        width: 31%;
+    }
+
+    /*大赛奖金*/
+    .bonus {
+        height: auto;
+        padding-bottom: 3%;
+
+    }
+
+    .bonus-title {
+        padding: 10% 0 8%;
+    }
+
+    .bonus-content-box {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    /*赛程赛制*/
+    .format-content-left {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 20px;
+        float: none;
+    }
+
+    .reservation .reservation-titlt {
+        padding: 10% 0 6% 0;
+    }
+
+    .reservation .reservation-content {
+        padding: 0 0 10% 0;
+    }
+
+    .format-content-right {
+        margin-bottom: 5%;
+    }
+
+    .form-group .col-sm-8 {
+        width: 100%;
+    }
+
+    .details .details-left .details-left-content .details-left-content-lg {
+        display: none !important;
+    }
+
+    .details .details-left .details-left-content .details-left-content-mini {
+        display: block !important;
+    }
+
+    .details .details-left .details-left-content .details-left-content-mini a {
+        padding: 10px 0 10px 15%;
+    }
+
+    .details .details-left .details-left-content .details-left-content-mini img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .details-left-content ul li.active {
+        background: #f5f5f5 !important;
+    }
+
+    .details-left-content > ul > li.active > a {
+        background: #f5f5f5 !important;
+    }
+
+    .details-left-content > ul > li.active > a:hover {
+        background: #f5f5f5 !important;
+    }
+
+    .details-left-content ul li a {
+        font-size: 14px;
+        background: #ffffff !important;
+    }
+
+    .details-left-content ul li a:hover {
+        background: #f5f5f5 !important;
+    }
+
+}

@@ -1,0 +1,127 @@
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .video-wrap{
+        width: 100%;
+        position: fixed;
+        height: 100%;
+        background:rgba(00, 00, 00, .6);
+        z-index: 999;
+    }
+    .division {
+        overflow-x: auto;
+        height: 970px !important;
+    }
+
+    div.container div#introduction div#introduction-img img  {
+        display: none !important;
+    }
+
+    .division-title {
+        font-size: 24px;
+        padding-top: 3%;
+        padding-bottom: 4%;
+    }
+
+    .division-content-left {
+        margin-bottom: 3%;
+    }
+
+    .division-content-left-title {
+        margin-bottom: 3%;
+        font-size: 18px;
+    }
+
+    .division-content-left ul li {
+        line-height: 20px;
+        font-size: 12px;
+        padding-bottom: 7%;
+    }
+
+    .division-content-left ul.sj li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .division-content-left img {
+        width: 31%;
+    }
+
+    .division-content-right {
+        margin-top: 15%;
+    }
+
+    .division-content-right-title {
+        margin-bottom: 3%;
+        font-size: 18px;
+    }
+
+    .division-content-right ul {
+        margin-top: -13%;
+    }
+
+    .division-content-right ul li {
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    .division-content-right img {
+        width: 31%;
+    }
+
+    .target {
+        min-height: 627px;
+        height: inherit !important;
+        padding-bottom: 20px;
+    }
+    .target-content-left {
+        padding-left: 15px;
+    }
+
+    .format {
+        height: auto !important;
+    }
+    .format-title {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .format-content-left {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 20px;
+        float: none;
+    }
+
+    .collect, .prelim, .inals, .display {
+        margin: 0 auto;
+    }
+    .format-content-right {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .format-content-right .content-left {
+        display: none;
+    }
+    .format-content-right .content-right {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+        height: inherit !important;
+    }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+    .service_img, .mission_img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
+    .aos-init {
+        margin-left: 15%;
+    }
+}

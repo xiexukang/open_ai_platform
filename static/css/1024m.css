@@ -1,0 +1,67 @@
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .division {
+        width: 100%;
+        height: 490px;
+    }
+
+    .division-content-left img {
+        width: 32%;
+    }
+
+    .division-content-right img {
+        width: 32%;
+    }
+
+    .format-content-left {
+        margin-left: 2%;
+    }
+
+    .title-competitions .appresources {
+        margin-top: 40%;
+    }
+
+    .title-competitions .appresource-top {
+        margin-left: 31%;
+    }
+
+    .address-info {
+        line-height: 18px;
+    }
+
+    .dyniclist{
+        width: 60%;
+    }
+
+    .newslist {
+        width: 35%;
+    }
+
+    .details .details-title h2 {
+        padding-top: 15%;
+    }
+    .video-wrap{
+        width: 100%;
+        position: fixed;
+        height: 100%;
+        background:rgba(00, 00, 00, .6);
+        z-index: 999;
+    }
+    .video{
+        height: 90%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin:auto;
+    }
+    #close-video{
+        font-family: 'iconfont';
+        position: absolute;
+        right: 4%;
+        top: 12%;
+        font-size: 25px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}
